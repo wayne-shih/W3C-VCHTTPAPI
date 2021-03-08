@@ -18,11 +18,15 @@ You may wish to programatically download the latest test results as JSON.
 
 #### All Vendors Test Results
 
+- HTML Report: TODO
+
 ```
 curl -s https://w3c-ccg.github.io/vc-http-api/test-suite/testResults.json | jq
 ```
 
 #### A specific vendor's Test Results
+
+- HTML Report: https://w3c-ccg.github.io/vc-http-api/test-suite/VENDOR_NAME
 
 ```
 curl -s https://w3c-ccg.github.io/vc-http-api/test-suite/VENDOR_NAME/testResults.json | jq
