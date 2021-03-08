@@ -24,7 +24,7 @@ You may wish to programatically download the latest test results as JSON.
 curl -s https://w3c-ccg.github.io/vc-http-api/test-suite/testResults.json | jq
 ```
 
-#### A specific vendor's Test Results
+#### Test Results for a Specific Implementation
 
 - HTML Report: https://w3c-ccg.github.io/vc-http-api/test-suite/VENDOR_NAME
 
