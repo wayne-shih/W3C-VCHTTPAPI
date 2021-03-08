@@ -26,10 +26,8 @@ curl -s https://w3c-ccg.github.io/vc-http-api/test-suite/testResults.json | jq
 
 #### Test Results for a Specific Implementation
 
-- HTML Report: https://w3c-ccg.github.io/vc-http-api/test-suite/VENDOR_NAME
+- HTML Report: https://w3c-ccg.github.io/vc-http-api/test-suite/IMPLEMENTATION_NAME
 
-```
-curl -s https://w3c-ccg.github.io/vc-http-api/test-suite/VENDOR_NAME/testResults.json | jq
 ```
 
 ### Contributing
