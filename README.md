@@ -16,7 +16,7 @@ The vc-http-api repository is structured with two main sections:
 
 You may wish to programatically download the latest test results as JSON.
 
-#### Test Results for All Implementations 
+#### Test Results for All Implementations
 
 - HTML Report: TODO
 
@@ -28,6 +28,8 @@ curl -s https://w3c-ccg.github.io/vc-http-api/test-suite/testResults.json | jq
 
 - HTML Report: https://w3c-ccg.github.io/vc-http-api/test-suite/IMPLEMENTATION_NAME
 
+```
+curl -s https://w3c-ccg.github.io/vc-http-api/test-suite/IMPLEMENTATION_NAME/testResults.json | jq
 ```
 
 ### Contributing
