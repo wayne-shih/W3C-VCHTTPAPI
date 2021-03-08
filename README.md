@@ -16,7 +16,7 @@ The vc-http-api repository is structured with two main sections:
 
 You may wish to programatically download the latest test results as JSON.
 
-#### All Vendors Test Results
+#### Test Results for All Implementations 
 
 - HTML Report: TODO
 
