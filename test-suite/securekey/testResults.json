@@ -1,32 +1,51 @@
 {
   "testResults": {
-    "numFailedTests": 0,
-    "numPassedTests": 80,
+    "numFailedTests": 13,
+    "numPassedTests": 67,
     "numTotalTests": 80,
     "testResults": [
       {
-        "numFailingTests": 0,
-        "numPassingTests": 37,
+        "numFailingTests": 9,
+        "numPassingTests": 28,
         "testResults": [
           {
             "ancestorTitles": [
               "Verify Credential API - Conformance",
-              "1. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated signature value (ex. a mutated jws) in the proof."
+              "1. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated signature value (such as a mutated jws) in the proof."
             ],
-            "failureDetails": [],
-            "failureMessages": [],
-            "fullName": "Verify Credential API - Conformance 1. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated signature value (ex. a mutated jws) in the proof. should pass with no mutation",
-            "status": "passed",
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "matcherResult": {
+                    "actual": 400,
+                    "expected": 200,
+                    "name": "toBe",
+                    "pass": false
+                  }
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400",
+                "passed": false,
+                "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:28:36)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              }
+            ],
+            "failureMessages": [
+              "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:28:36)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            ],
+            "fullName": "Verify Credential API - Conformance 1. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated signature value (such as a mutated jws) in the proof. should pass with no mutation",
+            "status": "failed",
             "title": "should pass with no mutation"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Conformance",
-              "1. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated signature value (ex. a mutated jws) in the proof."
+              "1. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated signature value (such as a mutated jws) in the proof."
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Conformance 1. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated signature value (ex. a mutated jws) in the proof. should fail with with mutation",
+            "fullName": "Verify Credential API - Conformance 1. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated signature value (such as a mutated jws) in the proof. should fail with with mutation",
             "status": "passed",
             "title": "should fail with with mutation"
           },
@@ -55,66 +74,66 @@
           {
             "ancestorTitles": [
               "Verify Credential API - Conformance",
-              "4. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with an added property to the credential."
+              "4. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a property added to the credential."
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Conformance 4. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with an added property to the credential. should fail",
+            "fullName": "Verify Credential API - Conformance 4. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a property added to the credential. should fail",
             "status": "passed",
             "title": "should fail"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Conformance",
-              "5. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a removed property from the credential."
+              "5. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a property removed from the credential."
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Conformance 5. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a removed property from the credential. should fail",
+            "fullName": "Verify Credential API - Conformance 5. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a property removed from the credential. should fail",
             "status": "passed",
             "title": "should fail"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Conformance",
-              "6. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated property to the credential."
+              "6. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated property in the credential."
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Conformance 6. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated property to the credential. should fail ",
+            "fullName": "Verify Credential API - Conformance 6. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated property in the credential. should fail ",
             "status": "passed",
             "title": "should fail "
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Conformance",
-              "7. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with an added property to the proof."
+              "7. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a property added to the proof."
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Conformance 7. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with an added property to the proof. should fail ",
+            "fullName": "Verify Credential API - Conformance 7. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a property added to the proof. should fail ",
             "status": "passed",
             "title": "should fail "
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Conformance",
-              "8. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential a removed property to the proof."
+              "8. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a property removed from the proof."
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Conformance 8. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential a removed property to the proof. should fail ",
+            "fullName": "Verify Credential API - Conformance 8. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a property removed from the proof. should fail ",
             "status": "passed",
             "title": "should fail "
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Conformance",
-              "9. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated property to the proof."
+              "9. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated property in the proof."
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Conformance 9. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated property to the proof. should fail ",
+            "fullName": "Verify Credential API - Conformance 9. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated property in the proof. should fail ",
             "status": "passed",
             "title": "should fail "
           },
@@ -123,10 +142,29 @@
               "Verify Credential API - Conformance",
               "10. The Verifier's Verify Credential HTTP API MUST adhere to the proof verification format."
             ],
-            "failureDetails": [],
-            "failureMessages": [],
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "matcherResult": {
+                    "actual": 400,
+                    "expected": 200,
+                    "name": "toBe",
+                    "pass": false
+                  }
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400",
+                "passed": false,
+                "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:165:36)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              }
+            ],
+            "failureMessages": [
+              "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:165:36)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            ],
             "fullName": "Verify Credential API - Conformance 10. The Verifier's Verify Credential HTTP API MUST adhere to the proof verification format. should pass",
-            "status": "passed",
+            "status": "failed",
             "title": "should pass"
           },
           {
@@ -143,275 +181,408 @@
           {
             "ancestorTitles": [
               "Verify Credential API - Conformance",
-              "12. The Verifier's Verify Credential HTTP API MUST support the verification of, JSON-LD Proof, Ed25519Signature2018."
+              "12. The Verifier's Verify Credential HTTP API MUST support the verification of JSON-LD Proof, Ed25519Signature2018."
             ],
-            "failureDetails": [],
-            "failureMessages": [],
-            "fullName": "Verify Credential API - Conformance 12. The Verifier's Verify Credential HTTP API MUST support the verification of, JSON-LD Proof, Ed25519Signature2018. should pass",
-            "status": "passed",
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "matcherResult": {
+                    "actual": 400,
+                    "expected": 200,
+                    "name": "toBe",
+                    "pass": false
+                  }
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400",
+                "passed": false,
+                "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:198:36)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              }
+            ],
+            "failureMessages": [
+              "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:198:36)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            ],
+            "fullName": "Verify Credential API - Conformance 12. The Verifier's Verify Credential HTTP API MUST support the verification of JSON-LD Proof, Ed25519Signature2018. should pass",
+            "status": "failed",
             "title": "should pass"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1"
             ],
-            "failureDetails": [],
-            "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1 should pass with no mutation",
-            "status": "passed",
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "matcherResult": {
+                    "actual": 400,
+                    "expected": 200,
+                    "name": "toBe",
+                    "pass": false
+                  }
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400",
+                "passed": false,
+                "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:268:40)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              }
+            ],
+            "failureMessages": [
+              "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:268:40)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            ],
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1 should pass with no mutation",
+            "status": "failed",
             "title": "should pass with no mutation"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1 should fail with mutated proof value",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1 should fail with mutated proof value",
             "status": "passed",
             "title": "should fail with mutated proof value"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1 should fail with additional unsigned property in credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1 should fail with additional unsigned property in credential",
             "status": "passed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1 should fail with deleted property from credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1 should fail with deleted property from credential",
             "status": "passed",
             "title": "should fail with deleted property from credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12"
+              "Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12"
             ],
-            "failureDetails": [],
-            "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12 should pass with no mutation",
-            "status": "passed",
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "matcherResult": {
+                    "actual": 400,
+                    "expected": 200,
+                    "name": "toBe",
+                    "pass": false
+                  }
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400",
+                "passed": false,
+                "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:268:40)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              }
+            ],
+            "failureMessages": [
+              "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:268:40)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            ],
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12 should pass with no mutation",
+            "status": "failed",
             "title": "should pass with no mutation"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12"
+              "Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12 should fail with mutated proof value",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12 should fail with mutated proof value",
             "status": "passed",
             "title": "should fail with mutated proof value"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12"
+              "Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12 should fail with additional unsigned property in credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12 should fail with additional unsigned property in credential",
             "status": "passed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12"
+              "Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12 should fail with deleted property from credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12 should fail with deleted property from credential",
             "status": "passed",
             "title": "should fail with deleted property from credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14"
             ],
-            "failureDetails": [],
-            "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14 should pass with no mutation",
-            "status": "passed",
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "matcherResult": {
+                    "actual": 400,
+                    "expected": 200,
+                    "name": "toBe",
+                    "pass": false
+                  }
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400",
+                "passed": false,
+                "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:268:40)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              }
+            ],
+            "failureMessages": [
+              "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:268:40)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            ],
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14 should pass with no mutation",
+            "status": "failed",
             "title": "should pass with no mutation"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14 should fail with mutated proof value",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14 should fail with mutated proof value",
             "status": "passed",
             "title": "should fail with mutated proof value"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14 should fail with additional unsigned property in credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14 should fail with additional unsigned property in credential",
             "status": "passed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14 should fail with deleted property from credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14 should fail with deleted property from credential",
             "status": "passed",
             "title": "should fail with deleted property from credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15"
             ],
-            "failureDetails": [],
-            "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15 should pass with no mutation",
-            "status": "passed",
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "matcherResult": {
+                    "actual": 400,
+                    "expected": 200,
+                    "name": "toBe",
+                    "pass": false
+                  }
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400",
+                "passed": false,
+                "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:268:40)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              }
+            ],
+            "failureMessages": [
+              "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:268:40)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            ],
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15 should pass with no mutation",
+            "status": "failed",
             "title": "should pass with no mutation"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15 should fail with mutated proof value",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15 should fail with mutated proof value",
             "status": "passed",
             "title": "should fail with mutated proof value"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15 should fail with additional unsigned property in credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15 should fail with additional unsigned property in credential",
             "status": "passed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15 should fail with deleted property from credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15 should fail with deleted property from credential",
             "status": "passed",
             "title": "should fail with deleted property from credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify undefined verifiable credential, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2"
+              "Can verify verifiable credential undefined, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2"
             ],
-            "failureDetails": [],
-            "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify undefined verifiable credential, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2 should pass with no mutation",
-            "status": "passed",
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "matcherResult": {
+                    "actual": 400,
+                    "expected": 200,
+                    "name": "toBe",
+                    "pass": false
+                  }
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400",
+                "passed": false,
+                "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:268:40)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              }
+            ],
+            "failureMessages": [
+              "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:268:40)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            ],
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential undefined, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2 should pass with no mutation",
+            "status": "failed",
             "title": "should pass with no mutation"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify undefined verifiable credential, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2"
+              "Can verify verifiable credential undefined, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify undefined verifiable credential, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2 should fail with mutated proof value",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential undefined, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2 should fail with mutated proof value",
             "status": "passed",
             "title": "should fail with mutated proof value"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify undefined verifiable credential, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2"
+              "Can verify verifiable credential undefined, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify undefined verifiable credential, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2 should fail with additional unsigned property in credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential undefined, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2 should fail with additional unsigned property in credential",
             "status": "passed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify undefined verifiable credential, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2"
+              "Can verify verifiable credential undefined, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify undefined verifiable credential, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2 should fail with deleted property from credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential undefined, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2 should fail with deleted property from credential",
             "status": "passed",
             "title": "should fail with deleted property from credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:web:vc.transmute.world and linked data proof suite Ed25519Signature2018, fixture case-5"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:web:vc.transmute.world and linked data proof suite Ed25519Signature2018, fixture case-5"
             ],
-            "failureDetails": [],
-            "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:web:vc.transmute.world and linked data proof suite Ed25519Signature2018, fixture case-5 should pass with no mutation",
-            "status": "passed",
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "matcherResult": {
+                    "actual": 400,
+                    "expected": 200,
+                    "name": "toBe",
+                    "pass": false
+                  }
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400",
+                "passed": false,
+                "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:268:40)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              }
+            ],
+            "failureMessages": [
+              "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:268:40)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            ],
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:web:vc.transmute.world and linked data proof suite Ed25519Signature2018, fixture case-5 should pass with no mutation",
+            "status": "failed",
             "title": "should pass with no mutation"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:web:vc.transmute.world and linked data proof suite Ed25519Signature2018, fixture case-5"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:web:vc.transmute.world and linked data proof suite Ed25519Signature2018, fixture case-5"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:web:vc.transmute.world and linked data proof suite Ed25519Signature2018, fixture case-5 should fail with mutated proof value",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:web:vc.transmute.world and linked data proof suite Ed25519Signature2018, fixture case-5 should fail with mutated proof value",
             "status": "passed",
             "title": "should fail with mutated proof value"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:web:vc.transmute.world and linked data proof suite Ed25519Signature2018, fixture case-5"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:web:vc.transmute.world and linked data proof suite Ed25519Signature2018, fixture case-5"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:web:vc.transmute.world and linked data proof suite Ed25519Signature2018, fixture case-5 should fail with additional unsigned property in credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:web:vc.transmute.world and linked data proof suite Ed25519Signature2018, fixture case-5 should fail with additional unsigned property in credential",
             "status": "passed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:web:vc.transmute.world and linked data proof suite Ed25519Signature2018, fixture case-5"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:web:vc.transmute.world and linked data proof suite Ed25519Signature2018, fixture case-5"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:web:vc.transmute.world and linked data proof suite Ed25519Signature2018, fixture case-5 should fail with deleted property from credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:web:vc.transmute.world and linked data proof suite Ed25519Signature2018, fixture case-5 should fail with deleted property from credential",
             "status": "passed",
             "title": "should fail with deleted property from credential"
           }
@@ -842,18 +1013,37 @@
         ]
       },
       {
-        "numFailingTests": 0,
-        "numPassingTests": 5,
+        "numFailingTests": 4,
+        "numPassingTests": 1,
         "testResults": [
           {
             "ancestorTitles": [
               "Verify Presentation API",
               "1. The Verifier's Verify Presentation HTTP API MUST verify a Verifiable Presentation where the credential's issuer, presentation's holder and credential's subject are different."
             ],
-            "failureDetails": [],
-            "failureMessages": [],
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "matcherResult": {
+                    "actual": 400,
+                    "expected": 200,
+                    "name": "toBe",
+                    "pass": false
+                  }
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400",
+                "passed": false,
+                "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at /home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyPresentation.spec.js:46:32\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async Promise.all (index 0)\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyPresentation.spec.js:30:9)"
+              }
+            ],
+            "failureMessages": [
+              "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at /home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyPresentation.spec.js:46:32\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async Promise.all (index 0)\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyPresentation.spec.js:30:9)"
+            ],
             "fullName": "Verify Presentation API 1. The Verifier's Verify Presentation HTTP API MUST verify a Verifiable Presentation where the credential's issuer, presentation's holder and credential's subject are different. should pass",
-            "status": "passed",
+            "status": "failed",
             "title": "should pass"
           },
           {
@@ -861,10 +1051,29 @@
               "Verify Presentation API",
               "2. The Verifier's Verify Presentation HTTP API MUST verify a Verifiable Presentation where the credential's issuer, presentation's holder and credential's subject are the same."
             ],
-            "failureDetails": [],
-            "failureMessages": [],
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "matcherResult": {
+                    "actual": 400,
+                    "expected": 200,
+                    "name": "toBe",
+                    "pass": false
+                  }
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400",
+                "passed": false,
+                "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at /home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyPresentation.spec.js:76:32\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async Promise.all (index 0)\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyPresentation.spec.js:65:9)"
+              }
+            ],
+            "failureMessages": [
+              "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at /home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyPresentation.spec.js:76:32\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async Promise.all (index 0)\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyPresentation.spec.js:65:9)"
+            ],
             "fullName": "Verify Presentation API 2. The Verifier's Verify Presentation HTTP API MUST verify a Verifiable Presentation where the credential's issuer, presentation's holder and credential's subject are the same. should pass",
-            "status": "passed",
+            "status": "failed",
             "title": "should pass"
           },
           {
@@ -872,10 +1081,29 @@
               "Verify Presentation API",
               "3. The Verifier's Verify Presentation HTTP API MUST adhere to the proof verification format."
             ],
-            "failureDetails": [],
-            "failureMessages": [],
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "matcherResult": {
+                    "actual": 400,
+                    "expected": 200,
+                    "name": "toBe",
+                    "pass": false
+                  }
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400",
+                "passed": false,
+                "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyPresentation.spec.js:96:28)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              }
+            ],
+            "failureMessages": [
+              "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyPresentation.spec.js:96:28)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            ],
             "fullName": "Verify Presentation API 3. The Verifier's Verify Presentation HTTP API MUST adhere to the proof verification format. should pass",
-            "status": "passed",
+            "status": "failed",
             "title": "should pass"
           },
           {
@@ -894,10 +1122,29 @@
               "Verify Presentation API",
               "5. The Verifier's Verify Presentation HTTP API MUST support the verification of, JSON-LD Proof, Ed25519Signature2018."
             ],
-            "failureDetails": [],
-            "failureMessages": [],
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "matcherResult": {
+                    "actual": 400,
+                    "expected": 200,
+                    "name": "toBe",
+                    "pass": false
+                  }
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400",
+                "passed": false,
+                "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyPresentation.spec.js:134:28)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              }
+            ],
+            "failureMessages": [
+              "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyPresentation.spec.js:134:28)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            ],
             "fullName": "Verify Presentation API 5. The Verifier's Verify Presentation HTTP API MUST support the verification of, JSON-LD Proof, Ed25519Signature2018. should pass",
-            "status": "passed",
+            "status": "failed",
             "title": "should pass"
           }
         ]

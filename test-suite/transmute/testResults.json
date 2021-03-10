@@ -1,33 +1,63 @@
 {
   "testResults": {
-    "numFailedTests": 0,
-    "numPassedTests": 100,
+    "numFailedTests": 3,
+    "numPassedTests": 97,
     "numTotalTests": 100,
     "testResults": [
       {
-        "numFailingTests": 0,
-        "numPassingTests": 57,
+        "numFailingTests": 3,
+        "numPassingTests": 54,
         "testResults": [
           {
             "ancestorTitles": [
               "Verify Credential API - Conformance",
-              "1. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated signature value (ex. a mutated jws) in the proof."
+              "1. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated signature value (such as a mutated jws) in the proof."
             ],
-            "failureDetails": [],
-            "failureMessages": [],
-            "fullName": "Verify Credential API - Conformance 1. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated signature value (ex. a mutated jws) in the proof. should pass with no mutation",
-            "status": "passed",
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "name": "",
+                  "message": "Timeout - Async callback was not invoked within the 20000 ms timeout specified by jest.setTimeout."
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": ": Timeout - Async callback was not invoked within the 20000 ms timeout specified by jest.setTimeout.",
+                "passed": false,
+                "stack": "Timeout - Async callback was not invoked within the 20000 ms timeout specified by jest.setTimeout.Error: \n    at new Spec (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Spec.js:116:22)\n    at new Spec (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/setup_jest_globals.js:78:9)\n    at specFactory (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:523:24)\n    at Env.it (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:592:24)\n    at Env.it (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:134:23)\n    at it (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:100:21)\n    at Suite.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:20:13)\n    at addSpecsToSuite (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)\n    at Env.describe (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)\n    at describe (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)\n    at Suite.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:19:9)\n    at addSpecsToSuite (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)\n    at Env.describe (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)\n    at describe (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:7:5)\n    at Runtime._execModule (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runtime/build/index.js:1299:24)\n    at Runtime._loadModule (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runtime/build/index.js:898:12)\n    at Runtime.requireModule (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runtime/build/index.js:746:10)\n    at jasmine2 (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/index.js:230:13)\n    at runTestInternal (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runner/build/runTest.js:380:22)\n    at runTest (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runner/build/runTest.js:472:34)"
+              }
+            ],
+            "failureMessages": [
+              ": Timeout - Async callback was not invoked within the 20000 ms timeout specified by jest.setTimeout.Timeout - Async callback was not invoked within the 20000 ms timeout specified by jest.setTimeout.Error: \n    at new Spec (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Spec.js:116:22)\n    at new Spec (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/setup_jest_globals.js:78:9)\n    at specFactory (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:523:24)\n    at Env.it (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:592:24)\n    at Env.it (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:134:23)\n    at it (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:100:21)\n    at Suite.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:20:13)\n    at addSpecsToSuite (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)\n    at Env.describe (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)\n    at describe (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)\n    at Suite.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:19:9)\n    at addSpecsToSuite (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)\n    at Env.describe (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)\n    at describe (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:7:5)\n    at Runtime._execModule (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runtime/build/index.js:1299:24)\n    at Runtime._loadModule (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runtime/build/index.js:898:12)\n    at Runtime.requireModule (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runtime/build/index.js:746:10)\n    at jasmine2 (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/index.js:230:13)\n    at runTestInternal (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runner/build/runTest.js:380:22)\n    at runTest (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runner/build/runTest.js:472:34)"
+            ],
+            "fullName": "Verify Credential API - Conformance 1. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated signature value (such as a mutated jws) in the proof. should pass with no mutation",
+            "status": "failed",
             "title": "should pass with no mutation"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Conformance",
-              "1. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated signature value (ex. a mutated jws) in the proof."
+              "1. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated signature value (such as a mutated jws) in the proof."
             ],
-            "failureDetails": [],
-            "failureMessages": [],
-            "fullName": "Verify Credential API - Conformance 1. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated signature value (ex. a mutated jws) in the proof. should fail with with mutation",
-            "status": "passed",
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "name": "",
+                  "message": "Timeout - Async callback was not invoked within the 20000 ms timeout specified by jest.setTimeout."
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": ": Timeout - Async callback was not invoked within the 20000 ms timeout specified by jest.setTimeout.",
+                "passed": false,
+                "stack": "Timeout - Async callback was not invoked within the 20000 ms timeout specified by jest.setTimeout.Error: \n    at new Spec (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Spec.js:116:22)\n    at new Spec (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/setup_jest_globals.js:78:9)\n    at specFactory (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:523:24)\n    at Env.it (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:592:24)\n    at Env.it (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:134:23)\n    at it (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:100:21)\n    at Suite.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:31:13)\n    at addSpecsToSuite (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)\n    at Env.describe (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)\n    at describe (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)\n    at Suite.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:19:9)\n    at addSpecsToSuite (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)\n    at Env.describe (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)\n    at describe (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:7:5)\n    at Runtime._execModule (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runtime/build/index.js:1299:24)\n    at Runtime._loadModule (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runtime/build/index.js:898:12)\n    at Runtime.requireModule (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runtime/build/index.js:746:10)\n    at jasmine2 (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/index.js:230:13)\n    at runTestInternal (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runner/build/runTest.js:380:22)\n    at runTest (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runner/build/runTest.js:472:34)"
+              }
+            ],
+            "failureMessages": [
+              ": Timeout - Async callback was not invoked within the 20000 ms timeout specified by jest.setTimeout.Timeout - Async callback was not invoked within the 20000 ms timeout specified by jest.setTimeout.Error: \n    at new Spec (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Spec.js:116:22)\n    at new Spec (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/setup_jest_globals.js:78:9)\n    at specFactory (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:523:24)\n    at Env.it (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:592:24)\n    at Env.it (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:134:23)\n    at it (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:100:21)\n    at Suite.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:31:13)\n    at addSpecsToSuite (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)\n    at Env.describe (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)\n    at describe (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)\n    at Suite.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:19:9)\n    at addSpecsToSuite (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)\n    at Env.describe (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)\n    at describe (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:7:5)\n    at Runtime._execModule (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runtime/build/index.js:1299:24)\n    at Runtime._loadModule (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runtime/build/index.js:898:12)\n    at Runtime.requireModule (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runtime/build/index.js:746:10)\n    at jasmine2 (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/index.js:230:13)\n    at runTestInternal (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runner/build/runTest.js:380:22)\n    at runTest (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runner/build/runTest.js:472:34)"
+            ],
+            "fullName": "Verify Credential API - Conformance 1. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated signature value (such as a mutated jws) in the proof. should fail with with mutation",
+            "status": "failed",
             "title": "should fail with with mutation"
           },
           {
@@ -35,10 +65,25 @@
               "Verify Credential API - Conformance",
               "2. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with the \"created\" property removed from the proof."
             ],
-            "failureDetails": [],
-            "failureMessages": [],
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "name": "",
+                  "message": "Timeout - Async callback was not invoked within the 20000 ms timeout specified by jest.setTimeout."
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": ": Timeout - Async callback was not invoked within the 20000 ms timeout specified by jest.setTimeout.",
+                "passed": false,
+                "stack": "Timeout - Async callback was not invoked within the 20000 ms timeout specified by jest.setTimeout.Error: \n    at new Spec (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Spec.js:116:22)\n    at new Spec (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/setup_jest_globals.js:78:9)\n    at specFactory (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:523:24)\n    at Env.it (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:592:24)\n    at Env.it (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:134:23)\n    at it (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:100:21)\n    at Suite.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:45:13)\n    at addSpecsToSuite (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)\n    at Env.describe (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)\n    at describe (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)\n    at Suite.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:44:9)\n    at addSpecsToSuite (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)\n    at Env.describe (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)\n    at describe (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:7:5)\n    at Runtime._execModule (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runtime/build/index.js:1299:24)\n    at Runtime._loadModule (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runtime/build/index.js:898:12)\n    at Runtime.requireModule (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runtime/build/index.js:746:10)\n    at jasmine2 (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/index.js:230:13)\n    at runTestInternal (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runner/build/runTest.js:380:22)\n    at runTest (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runner/build/runTest.js:472:34)"
+              }
+            ],
+            "failureMessages": [
+              ": Timeout - Async callback was not invoked within the 20000 ms timeout specified by jest.setTimeout.Timeout - Async callback was not invoked within the 20000 ms timeout specified by jest.setTimeout.Error: \n    at new Spec (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Spec.js:116:22)\n    at new Spec (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/setup_jest_globals.js:78:9)\n    at specFactory (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:523:24)\n    at Env.it (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:592:24)\n    at Env.it (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:134:23)\n    at it (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:100:21)\n    at Suite.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:45:13)\n    at addSpecsToSuite (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)\n    at Env.describe (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)\n    at describe (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)\n    at Suite.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:44:9)\n    at addSpecsToSuite (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)\n    at Env.describe (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)\n    at describe (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:7:5)\n    at Runtime._execModule (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runtime/build/index.js:1299:24)\n    at Runtime._loadModule (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runtime/build/index.js:898:12)\n    at Runtime.requireModule (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runtime/build/index.js:746:10)\n    at jasmine2 (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-jasmine2/build/index.js:230:13)\n    at runTestInternal (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runner/build/runTest.js:380:22)\n    at runTest (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/node_modules/jest/node_modules/jest-runner/build/runTest.js:472:34)"
+            ],
             "fullName": "Verify Credential API - Conformance 2. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with the \"created\" property removed from the proof. should fail without created in proof",
-            "status": "passed",
+            "status": "failed",
             "title": "should fail without created in proof"
           },
           {
@@ -55,66 +100,66 @@
           {
             "ancestorTitles": [
               "Verify Credential API - Conformance",
-              "4. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with an added property to the credential."
+              "4. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a property added to the credential."
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Conformance 4. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with an added property to the credential. should fail",
+            "fullName": "Verify Credential API - Conformance 4. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a property added to the credential. should fail",
             "status": "passed",
             "title": "should fail"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Conformance",
-              "5. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a removed property from the credential."
+              "5. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a property removed from the credential."
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Conformance 5. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a removed property from the credential. should fail",
+            "fullName": "Verify Credential API - Conformance 5. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a property removed from the credential. should fail",
             "status": "passed",
             "title": "should fail"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Conformance",
-              "6. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated property to the credential."
+              "6. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated property in the credential."
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Conformance 6. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated property to the credential. should fail ",
+            "fullName": "Verify Credential API - Conformance 6. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated property in the credential. should fail ",
             "status": "passed",
             "title": "should fail "
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Conformance",
-              "7. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with an added property to the proof."
+              "7. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a property added to the proof."
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Conformance 7. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with an added property to the proof. should fail ",
+            "fullName": "Verify Credential API - Conformance 7. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a property added to the proof. should fail ",
             "status": "passed",
             "title": "should fail "
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Conformance",
-              "8. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential a removed property to the proof."
+              "8. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a property removed from the proof."
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Conformance 8. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential a removed property to the proof. should fail ",
+            "fullName": "Verify Credential API - Conformance 8. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a property removed from the proof. should fail ",
             "status": "passed",
             "title": "should fail "
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Conformance",
-              "9. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated property to the proof."
+              "9. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated property in the proof."
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Conformance 9. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated property to the proof. should fail ",
+            "fullName": "Verify Credential API - Conformance 9. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a mutated property in the proof. should fail ",
             "status": "passed",
             "title": "should fail "
           },
@@ -143,495 +188,495 @@
           {
             "ancestorTitles": [
               "Verify Credential API - Conformance",
-              "12. The Verifier's Verify Credential HTTP API MUST support the verification of, JSON-LD Proof, Ed25519Signature2018."
+              "12. The Verifier's Verify Credential HTTP API MUST support the verification of JSON-LD Proof, Ed25519Signature2018."
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Conformance 12. The Verifier's Verify Credential HTTP API MUST support the verification of, JSON-LD Proof, Ed25519Signature2018. should pass",
+            "fullName": "Verify Credential API - Conformance 12. The Verifier's Verify Credential HTTP API MUST support the verification of JSON-LD Proof, Ed25519Signature2018. should pass",
             "status": "passed",
             "title": "should pass"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1 should pass with no mutation",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1 should pass with no mutation",
             "status": "passed",
             "title": "should pass with no mutation"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1 should fail with mutated proof value",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1 should fail with mutated proof value",
             "status": "passed",
             "title": "should fail with mutated proof value"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1 should fail with additional unsigned property in credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1 should fail with additional unsigned property in credential",
             "status": "passed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1 should fail with deleted property from credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1 should fail with deleted property from credential",
             "status": "passed",
             "title": "should fail with deleted property from credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12"
+              "Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12 should pass with no mutation",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12 should pass with no mutation",
             "status": "passed",
             "title": "should pass with no mutation"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12"
+              "Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12 should fail with mutated proof value",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12 should fail with mutated proof value",
             "status": "passed",
             "title": "should fail with mutated proof value"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12"
+              "Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12 should fail with additional unsigned property in credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12 should fail with additional unsigned property in credential",
             "status": "passed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12"
+              "Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12 should fail with deleted property from credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12 should fail with deleted property from credential",
             "status": "passed",
             "title": "should fail with deleted property from credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14 should pass with no mutation",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14 should pass with no mutation",
             "status": "passed",
             "title": "should pass with no mutation"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14 should fail with mutated proof value",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14 should fail with mutated proof value",
             "status": "passed",
             "title": "should fail with mutated proof value"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14 should fail with additional unsigned property in credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14 should fail with additional unsigned property in credential",
             "status": "passed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14 should fail with deleted property from credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14 should fail with deleted property from credential",
             "status": "passed",
             "title": "should fail with deleted property from credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15 should pass with no mutation",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15 should pass with no mutation",
             "status": "passed",
             "title": "should pass with no mutation"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15 should fail with mutated proof value",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15 should fail with mutated proof value",
             "status": "passed",
             "title": "should fail with mutated proof value"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15 should fail with additional unsigned property in credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15 should fail with additional unsigned property in credential",
             "status": "passed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15 should fail with deleted property from credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15 should fail with deleted property from credential",
             "status": "passed",
             "title": "should fail with deleted property from credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-16"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-16"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-16 should pass with no mutation",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-16 should pass with no mutation",
             "status": "passed",
             "title": "should pass with no mutation"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-16"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-16"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-16 should fail with mutated proof value",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-16 should fail with mutated proof value",
             "status": "passed",
             "title": "should fail with mutated proof value"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-16"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-16"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-16 should fail with additional unsigned property in credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-16 should fail with additional unsigned property in credential",
             "status": "passed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-16"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-16"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-16 should fail with deleted property from credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-16 should fail with deleted property from credential",
             "status": "passed",
             "title": "should fail with deleted property from credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-17"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-17"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-17 should pass with no mutation",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-17 should pass with no mutation",
             "status": "passed",
             "title": "should pass with no mutation"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-17"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-17"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-17 should fail with mutated proof value",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-17 should fail with mutated proof value",
             "status": "passed",
             "title": "should fail with mutated proof value"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-17"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-17"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-17 should fail with additional unsigned property in credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-17 should fail with additional unsigned property in credential",
             "status": "passed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-17"
+              "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-17"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify Permanent Resident Card verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-17 should fail with deleted property from credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-17 should fail with deleted property from credential",
             "status": "passed",
             "title": "should fail with deleted property from credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify undefined verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-18"
+              "Can verify verifiable credential undefined, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-18"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify undefined verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-18 should pass with no mutation",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential undefined, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-18 should pass with no mutation",
             "status": "passed",
             "title": "should pass with no mutation"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify undefined verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-18"
+              "Can verify verifiable credential undefined, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-18"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify undefined verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-18 should fail with mutated proof value",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential undefined, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-18 should fail with mutated proof value",
             "status": "passed",
             "title": "should fail with mutated proof value"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify undefined verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-18"
+              "Can verify verifiable credential undefined, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-18"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify undefined verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-18 should fail with additional unsigned property in credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential undefined, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-18 should fail with additional unsigned property in credential",
             "status": "passed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify undefined verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-18"
+              "Can verify verifiable credential undefined, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-18"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify undefined verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-18 should fail with deleted property from credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential undefined, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-18 should fail with deleted property from credential",
             "status": "passed",
             "title": "should fail with deleted property from credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify undefined verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-19"
+              "Can verify verifiable credential undefined, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-19"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify undefined verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-19 should pass with no mutation",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential undefined, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-19 should pass with no mutation",
             "status": "passed",
             "title": "should pass with no mutation"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify undefined verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-19"
+              "Can verify verifiable credential undefined, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-19"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify undefined verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-19 should fail with mutated proof value",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential undefined, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-19 should fail with mutated proof value",
             "status": "passed",
             "title": "should fail with mutated proof value"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify undefined verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-19"
+              "Can verify verifiable credential undefined, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-19"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify undefined verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-19 should fail with additional unsigned property in credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential undefined, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-19 should fail with additional unsigned property in credential",
             "status": "passed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify undefined verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-19"
+              "Can verify verifiable credential undefined, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-19"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify undefined verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-19 should fail with deleted property from credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential undefined, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-19 should fail with deleted property from credential",
             "status": "passed",
             "title": "should fail with deleted property from credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify undefined verifiable credential, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2"
+              "Can verify verifiable credential undefined, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify undefined verifiable credential, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2 should pass with no mutation",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential undefined, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2 should pass with no mutation",
             "status": "passed",
             "title": "should pass with no mutation"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify undefined verifiable credential, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2"
+              "Can verify verifiable credential undefined, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify undefined verifiable credential, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2 should fail with mutated proof value",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential undefined, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2 should fail with mutated proof value",
             "status": "passed",
             "title": "should fail with mutated proof value"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify undefined verifiable credential, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2"
+              "Can verify verifiable credential undefined, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify undefined verifiable credential, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2 should fail with additional unsigned property in credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential undefined, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2 should fail with additional unsigned property in credential",
             "status": "passed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify undefined verifiable credential, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2"
+              "Can verify verifiable credential undefined, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify undefined verifiable credential, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2 should fail with deleted property from credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential undefined, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2 should fail with deleted property from credential",
             "status": "passed",
             "title": "should fail with deleted property from credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-20"
+              "Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-20"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-20 should pass with no mutation",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-20 should pass with no mutation",
             "status": "passed",
             "title": "should pass with no mutation"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-20"
+              "Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-20"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-20 should fail with mutated proof value",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-20 should fail with mutated proof value",
             "status": "passed",
             "title": "should fail with mutated proof value"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-20"
+              "Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-20"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-20 should fail with additional unsigned property in credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-20 should fail with additional unsigned property in credential",
             "status": "passed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-20"
+              "Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-20"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-20 should fail with deleted property from credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignature2020, fixture case-20 should fail with deleted property from credential",
             "status": "passed",
             "title": "should fail with deleted property from credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-21"
+              "Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-21"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-21 should pass with no mutation",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-21 should pass with no mutation",
             "status": "passed",
             "title": "should pass with no mutation"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-21"
+              "Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-21"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-21 should fail with mutated proof value",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-21 should fail with mutated proof value",
             "status": "passed",
             "title": "should fail with mutated proof value"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-21"
+              "Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-21"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-21 should fail with additional unsigned property in credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-21 should fail with additional unsigned property in credential",
             "status": "passed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
             "ancestorTitles": [
               "Verify Credential API - Interop",
-              "Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-21"
+              "Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-21"
             ],
             "failureDetails": [],
             "failureMessages": [],
-            "fullName": "Verify Credential API - Interop Can verify COVID-19 Vaccination Certificate verifiable credential, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-21 should fail with deleted property from credential",
+            "fullName": "Verify Credential API - Interop Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:zUC724vuGvHpnCGFG1qqpXb81SiBLu3KLSqVzenwEZNPoY35i2Bscb8DLaVwHvRFs6F2NkNNXRcPWvqnPDUd9ukdjLkjZd3u9zzL4wDZDUpkPAatLDGLEYVo8kkAzuAKJQMr7N2 and linked data proof suite BbsBlsSignatureProof2020, fixture case-21 should fail with deleted property from credential",
             "status": "passed",
             "title": "should fail with deleted property from credential"
           }
