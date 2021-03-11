@@ -1,12 +1,12 @@
 {
   "testResults": {
-    "numFailedTests": 8,
-    "numPassedTests": 119,
+    "numFailedTests": 19,
+    "numPassedTests": 108,
     "numTotalTests": 127,
     "testResults": [
       {
-        "numFailingTests": 1,
-        "numPassingTests": 64,
+        "numFailingTests": 12,
+        "numPassingTests": 53,
         "testResults": [
           {
             "ancestorTitles": [
@@ -57,10 +57,29 @@
               "Verify Credential API - Conformance",
               "4. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a property added to the credential."
             ],
-            "failureDetails": [],
-            "failureMessages": [],
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "matcherResult": {
+                    "actual": 200,
+                    "expected": 400,
+                    "name": "toBe",
+                    "pass": false
+                  }
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200",
+                "passed": false,
+                "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:82:36)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              }
+            ],
+            "failureMessages": [
+              "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:82:36)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            ],
             "fullName": "Verify Credential API - Conformance 4. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a property added to the credential. should fail",
-            "status": "passed",
+            "status": "failed",
             "title": "should fail"
           },
           {
@@ -90,10 +109,29 @@
               "Verify Credential API - Conformance",
               "7. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a property added to the proof."
             ],
-            "failureDetails": [],
-            "failureMessages": [],
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "matcherResult": {
+                    "actual": 200,
+                    "expected": 400,
+                    "name": "toBe",
+                    "pass": false
+                  }
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200",
+                "passed": false,
+                "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:124:36)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              }
+            ],
+            "failureMessages": [
+              "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:124:36)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            ],
             "fullName": "Verify Credential API - Conformance 7. The Verifier's Verify Credential HTTP API MUST fail to verify a Verifiable Credential with a property added to the proof. should fail ",
-            "status": "passed",
+            "status": "failed",
             "title": "should fail "
           },
           {
@@ -178,10 +216,29 @@
               "Verify Credential API - Interop",
               "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1"
             ],
-            "failureDetails": [],
-            "failureMessages": [],
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "matcherResult": {
+                    "actual": 200,
+                    "expected": 400,
+                    "name": "toBe",
+                    "pass": false
+                  }
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200",
+                "passed": false,
+                "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:296:40)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              }
+            ],
+            "failureMessages": [
+              "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:296:40)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            ],
             "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-1 should fail with additional unsigned property in credential",
-            "status": "passed",
+            "status": "failed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
@@ -222,10 +279,29 @@
               "Verify Credential API - Interop",
               "Can verify verifiable credential Steel Inc. CMTR, with issuer DID method did:v1:test:nym:z6MkfG5HTrBXzsAP8AbayNpG3ZaoyM4PCqNPrdWQRSpHDV6J and linked data proof suite Ed25519Signature2018, fixture case-10"
             ],
-            "failureDetails": [],
-            "failureMessages": [],
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "matcherResult": {
+                    "actual": 200,
+                    "expected": 400,
+                    "name": "toBe",
+                    "pass": false
+                  }
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200",
+                "passed": false,
+                "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:296:40)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              }
+            ],
+            "failureMessages": [
+              "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:296:40)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            ],
             "fullName": "Verify Credential API - Interop Can verify verifiable credential Steel Inc. CMTR, with issuer DID method did:v1:test:nym:z6MkfG5HTrBXzsAP8AbayNpG3ZaoyM4PCqNPrdWQRSpHDV6J and linked data proof suite Ed25519Signature2018, fixture case-10 should fail with additional unsigned property in credential",
-            "status": "passed",
+            "status": "failed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
@@ -266,10 +342,29 @@
               "Verify Credential API - Interop",
               "Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12"
             ],
-            "failureDetails": [],
-            "failureMessages": [],
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "matcherResult": {
+                    "actual": 200,
+                    "expected": 400,
+                    "name": "toBe",
+                    "pass": false
+                  }
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200",
+                "passed": false,
+                "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:296:40)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              }
+            ],
+            "failureMessages": [
+              "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:296:40)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            ],
             "fullName": "Verify Credential API - Interop Can verify verifiable credential COVID-19 Vaccination Certificate, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-12 should fail with additional unsigned property in credential",
-            "status": "passed",
+            "status": "failed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
@@ -310,10 +405,29 @@
               "Verify Credential API - Interop",
               "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14"
             ],
-            "failureDetails": [],
-            "failureMessages": [],
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "matcherResult": {
+                    "actual": 200,
+                    "expected": 400,
+                    "name": "toBe",
+                    "pass": false
+                  }
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200",
+                "passed": false,
+                "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:296:40)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              }
+            ],
+            "failureMessages": [
+              "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:296:40)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            ],
             "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-14 should fail with additional unsigned property in credential",
-            "status": "passed",
+            "status": "failed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
@@ -354,10 +468,29 @@
               "Verify Credential API - Interop",
               "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15"
             ],
-            "failureDetails": [],
-            "failureMessages": [],
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "matcherResult": {
+                    "actual": 200,
+                    "expected": 400,
+                    "name": "toBe",
+                    "pass": false
+                  }
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200",
+                "passed": false,
+                "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:296:40)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              }
+            ],
+            "failureMessages": [
+              "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:296:40)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            ],
             "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:key:z6MkiY62766b1LJkExWMsM3QG4WtX7QpY823dxoYzr9qZvJ3 and linked data proof suite Ed25519Signature2018, fixture case-15 should fail with additional unsigned property in credential",
-            "status": "passed",
+            "status": "failed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
@@ -398,10 +531,29 @@
               "Verify Credential API - Interop",
               "Can verify verifiable credential undefined, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2"
             ],
-            "failureDetails": [],
-            "failureMessages": [],
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "matcherResult": {
+                    "actual": 200,
+                    "expected": 400,
+                    "name": "toBe",
+                    "pass": false
+                  }
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200",
+                "passed": false,
+                "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:296:40)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              }
+            ],
+            "failureMessages": [
+              "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:296:40)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            ],
             "fullName": "Verify Credential API - Interop Can verify verifiable credential undefined, with issuer DID method did:key:z6MkjRagNiMu91DduvCvgEsqLZDVzrJzFrwahc4tXLt9DoHd and linked data proof suite Ed25519Signature2018, fixture case-2 should fail with additional unsigned property in credential",
-            "status": "passed",
+            "status": "failed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
@@ -505,10 +657,29 @@
               "Verify Credential API - Interop",
               "Can verify verifiable credential undefined, with issuer DID method did:v1:test:nym:z6Mkf2oXtnamowoTSFGda1bgmW3PSLDcHRj4W3eTU1Q3czuL and linked data proof suite Ed25519Signature2018, fixture case-4"
             ],
-            "failureDetails": [],
-            "failureMessages": [],
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "matcherResult": {
+                    "actual": 200,
+                    "expected": 400,
+                    "name": "toBe",
+                    "pass": false
+                  }
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200",
+                "passed": false,
+                "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:296:40)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              }
+            ],
+            "failureMessages": [
+              "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:296:40)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            ],
             "fullName": "Verify Credential API - Interop Can verify verifiable credential undefined, with issuer DID method did:v1:test:nym:z6Mkf2oXtnamowoTSFGda1bgmW3PSLDcHRj4W3eTU1Q3czuL and linked data proof suite Ed25519Signature2018, fixture case-4 should fail with additional unsigned property in credential",
-            "status": "passed",
+            "status": "failed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
@@ -549,10 +720,29 @@
               "Verify Credential API - Interop",
               "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:web:vc.transmute.world and linked data proof suite Ed25519Signature2018, fixture case-5"
             ],
-            "failureDetails": [],
-            "failureMessages": [],
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "matcherResult": {
+                    "actual": 200,
+                    "expected": 400,
+                    "name": "toBe",
+                    "pass": false
+                  }
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200",
+                "passed": false,
+                "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:296:40)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              }
+            ],
+            "failureMessages": [
+              "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:296:40)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            ],
             "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:web:vc.transmute.world and linked data proof suite Ed25519Signature2018, fixture case-5 should fail with additional unsigned property in credential",
-            "status": "passed",
+            "status": "failed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
@@ -725,10 +915,29 @@
               "Verify Credential API - Interop",
               "Can verify verifiable credential Permanent Resident Card, with issuer DID method did:sov:staging:PiEVD2uU2qKEQ5oxx1BJ6A and linked data proof suite Ed25519Signature2018, fixture case-9"
             ],
-            "failureDetails": [],
-            "failureMessages": [],
+            "failureDetails": [
+              {
+                "actual": "",
+                "error": {
+                  "matcherResult": {
+                    "actual": 200,
+                    "expected": 400,
+                    "name": "toBe",
+                    "pass": false
+                  }
+                },
+                "expected": "",
+                "matcherName": "",
+                "message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200",
+                "passed": false,
+                "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:296:40)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+              }
+            ],
+            "failureMessages": [
+              "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 200\n    at Object.<anonymous> (/home/runner/work/vc-http-api/vc-http-api/packages/vc-http-api-test-server/__tests__/verifyCredential.spec.js:296:40)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            ],
             "fullName": "Verify Credential API - Interop Can verify verifiable credential Permanent Resident Card, with issuer DID method did:sov:staging:PiEVD2uU2qKEQ5oxx1BJ6A and linked data proof suite Ed25519Signature2018, fixture case-9 should fail with additional unsigned property in credential",
-            "status": "passed",
+            "status": "failed",
             "title": "should fail with additional unsigned property in credential"
           },
           {
