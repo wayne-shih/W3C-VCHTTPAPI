@@ -1,5 +1,5 @@
 module.exports = {
-    name: "Mattr",
+    name: "MATTR",
     issueCredentialConfiguration: [
         {
             id: "did:key:z6MkqBXF5EGQaawhFdRMLftMGWpYw8dhurowTtmWQNEcZ2md",

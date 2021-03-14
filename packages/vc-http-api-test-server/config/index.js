@@ -8,7 +8,7 @@ module.exports = [
     require("./DigitalBazaar"),
     //require("./Dock"),
     //require("./Factom"),
-    require("./Mattr"),
+    require("./MATTR"),
     require("./Mavennet"),
     require("./SecureKey"),
     //require("./SICPA"),
